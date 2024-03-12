@@ -17,3 +17,15 @@ This document serves as a summary of notable papers I have recently reviewed.
 
 **Scope:** 
 This document serves as a centralized repository for all Computational Fluid Dynamics (CFD) related information pertaining to this project.
+
+# Reproduction Luca results
+
+## Introduction
+
+## Gmsh 
+- Details choice of mesh
+- Gmsh code
+  
+## Governing equations
+- Equations
+- Boundary conditions 
