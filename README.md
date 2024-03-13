@@ -29,3 +29,19 @@ This document serves as a centralized repository for all Computational Fluid Dyn
 ### Governing equations
 - Equations
 - Boundary conditions 
+
+### Mean flow statistics
+- Symmetries
+- Mean
+- Spatial correlation
+
+### How to validate our simulations ?
+- Reference for standard channel
+- Reference for correspondance between open channel and standard channel
+
+### What are we looking for ?
+- Coherents structures
+- Q-events
+- Literature
+
+### QUESTIONS
