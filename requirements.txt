@@ -1,0 +1,10 @@
+notebook
+numpy
+pandas
+tensorflow
+gym
+pyvirtualdisplay
+
+imageio
+IPython
+matplotlib
