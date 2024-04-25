@@ -1,0 +1,204 @@
+
+
+
+        --------------------------
+     |- NASTIN OUTPUT FOR PROBLEM: chan180
+        --------------------------
+
+
+
+        --------------------
+*    |- NODE CODES USED FOR VELOCITY
+        --------------------
+
+
+        CODE=               1
+        CODE=               2
+
+
+        -----------------------------
+     |- WAKE MODEL INFORMATION
+        -----------------------------
+
+
+
+        ---------------------
+     |- DIFFERENTIAL EQUATION
+        ---------------------
+
+
+          rho*du/dt + u.grad(u) + u.grad(u)^t + (div u) u - div[2*mu**eps(u)] + grad(p) =0
+          div(u)=0
+
+
+        --------------------
+     |- NUMERICAL PARAMETERS
+        --------------------
+
+        SOLUTION METHOD:         FRACTIONAL STEP
+        DIRICHLET CONDITIONS:    ON MATRIX
+        TIME INTEGRATION SCHEME: RUNGE-KUTTA, ORDER= 2
+        STABILIZATION METHOD:    GALERKIN
+        SUBGRID SCALE TRACKING:  NONE
+
+
+        --------------------------
+*    |- SUMMARY OF COMPUTING TIMES
+        --------------------------
+
+
+        TOTAL CPU TIME:                  458.16
+          element assembly:              389.83 ( 41.74 % )
+          boundary assembly:               0.27 (  0.03 % )
+          solver CONTINUITY:             374.42 ( 40.09 % )
+          solver VISCOUS_TERM:            84.07 (  9.00 % )
+          semi-implicit:                  70.08 (  7.50 % )
+
+
+        --------------------------
+*    |- SUMMARY OF COMPUTING TIMES
+        --------------------------
+
+
+        TOTAL CPU TIME:                  458.16
+          element assembly:              389.83 ( 41.74 % )
+          boundary assembly:               0.27 (  0.03 % )
+          solver CONTINUITY:             374.42 ( 40.09 % )
+          solver VISCOUS_TERM:            84.07 (  9.00 % )
+          semi-implicit:                  70.08 (  7.50 % )
+
+
+        -----------------
+     |- SUMMARY OF SOLVER
+        -----------------
+
+
+        CONTINUITY:
+        -----------
+
+        SOLVER:               CONJUGATE GRADIENT
+        # SOLVES=                  117
+        PRECONDITIONER:       LINELET
+        TOLERANCE PREC.=      0.100000E+02
+        MIN. # ITERATIONS=          83
+        MAX. # ITERATIONS=         500
+        AVE. # ITERATIONS=         417
+        TOT. # ITERATIONS=       48897
+        TOT. CPU TIME=         3.743E+02
+
+
+        SUMMARY OF SOLVER TIMES:
+
+        TOTAL SOLVER CPU TIME (AVERAGE):  3.743E+02
+          Initial operations:             1.063E+00 (  0.28 % )
+          Preconditioning:                4.566E+01 ( 12.20 % )
+          Coarse system solver (DCG):     0.000E+00 (  0.00 % )
+          Orthogonalization (GMRES):      0.000E+00 (  0.00 % )
+          Others:                         3.276E+02 ( 87.52 % )
+
+
+        |- SpMV:                        49131
+
+           Computation:             
+              Average CPU time:      2.585E+02 
+              Maximum CPU time:      2.607E+02 
+              Load balance:               0.99
+           Point-to-point comm.:    
+              Average CPU time:      2.670E+01 
+              Maximum CPU time:      2.803E+01 
+              Load balance:               0.95
+           Overall:                 
+              Average CPU time:      2.852E+02 
+              Maximum CPU time:      2.857E+02 
+              Load balance:               1.00
+                                    
+           Flops:                   
+              Average:               8.516E+02 Mflop/s
+              Maximum:               8.522E+02 Mflop/s
+
+
+        |- Dot product:                 98379
+
+           Computation:             
+              Average CPU time:      1.427E+01 
+              Maximum CPU time:      1.490E+01 
+              Load balance:               0.96
+           Point-to-point comm.:    
+              Average CPU time:      7.588E+00 
+              Maximum CPU time:      9.660E+00 
+              Load balance:               0.79
+           Overall:                 
+              Average CPU time:      2.186E+01 
+              Maximum CPU time:      2.442E+01 
+              Load balance:               0.90
+                                    
+           Flops:                   
+              Average:               8.099E+02 Mflop/s
+              Maximum:               9.632E+02 Mflop/s
+
+        VISCOUS_TERM:
+        -------------
+
+        SOLVER:               GMRES
+        # SOLVES=                  351
+        PRECONDITIONER:       DIAGONAL diag(A)
+        MIN. # ITERATIONS=           3
+        MAX. # ITERATIONS=           9
+        AVE. # ITERATIONS=           4
+        TOT. # ITERATIONS=        1502
+        TOT. CPU TIME=         8.384E+01
+
+
+        SUMMARY OF SOLVER TIMES:
+
+        TOTAL SOLVER CPU TIME (AVERAGE):  8.384E+01
+          Initial operations:             1.467E+01 ( 17.50 % )
+          Preconditioning:                3.026E+00 (  3.61 % )
+          Coarse system solver (DCG):     0.000E+00 (  0.00 % )
+          Orthogonalization (GMRES):      5.374E+00 (  6.41 % )
+          Others:                         6.077E+01 ( 72.48 % )
+
+
+        |- SpMV:                         3140
+
+           Computation:             
+              Average CPU time:      7.751E+01 
+              Maximum CPU time:      7.823E+01 
+              Load balance:               0.99
+           Point-to-point comm.:    
+              Average CPU time:      3.905E+00 
+              Maximum CPU time:      4.237E+00 
+              Load balance:               0.92
+           Overall:                 
+              Average CPU time:      8.142E+01 
+              Maximum CPU time:      8.144E+01 
+              Load balance:               1.00
+                                    
+           Flops:                   
+              Average:               1.716E+00 Gflop/s
+              Maximum:               1.721E+00 Gflop/s
+
+
+        |- Dot product:                  8217
+
+           Computation:             
+              Average CPU time:      3.766E+00 
+              Maximum CPU time:      3.884E+00 
+              Load balance:               0.97
+           Point-to-point comm.:    
+              Average CPU time:      5.589E-01 
+              Maximum CPU time:      7.043E-01 
+              Load balance:               0.79
+           Overall:                 
+              Average CPU time:      4.325E+00 
+              Maximum CPU time:      4.375E+00 
+              Load balance:               0.99
+                                    
+           Flops:                   
+              Average:               1.014E+00 Gflop/s
+              Maximum:               1.053E+00 Gflop/s
+
+
+
+     |- END OF NASTIN RUN
+

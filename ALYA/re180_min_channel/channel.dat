@@ -1,0 +1,35 @@
+$------------------------------------------------------------
+RUN_DATA                                                     
+  ALYA                chan180
+  RUN_TYPE:           nonconti, PRELIMINARY, FREQUENCY=8000 
+$  RUN_TYPE:           conti, PRELIMINARY, FREQUENCY=8000 
+  LATEX_INFO_FILE:    Yes                                
+  LIVE_INFORMATION:   Screen                             
+  TIMING              ON                                           
+END_RUN_DATA                                                 
+$------------------------------------------------------------
+PROBLEM_DATA                                                 
+  TIME_COUPLING         global, fromCritical 
+  TIME_INTERVAL         0.0, 1                           
+$  TIME_STEP_SIZE        1.e-2                               
+  NUMBER_OF_STEPS       1000000
+  NASTIN_MODULE         ON                                  
+  END_NASTIN_MODULE                                          
+  TEMPER_MODULE         OFF                          
+  END_TEMPER_MODULE                                          
+  PARALL_SERVICE        ON                                  
+    PARTITION_TYPE:       FACES
+    POSTPROCESS:          MASTER
+    PARTITIONING
+    METHOD:               SFC  
+    EXECUTION_MODE:       PARALLEL                    
+    END_PARTITIONING
+  END_PARALL_SERVICE                                         
+END_PROBLEM_DATA                                             
+$------------------------------------------------------------
+MPI_IO 
+  GEOMETRY:    ON
+  RESTART:     ON
+  POSTPROCESS: ON
+END_MPI_IO
+$-------------------------------------------------------------------

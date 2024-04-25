@@ -1,0 +1,34 @@
+$--------------------------------------------------
+PHYSICAL_PROBLEM
+  PROPERTIES
+     MATERIAL = 1  
+       DENSITY:    CONSTANT, PARAMETER = 1.0  
+       VISCOSITY:  CONSTANT, PARAMETER = 0.0003546986585888876
+$       TURBULENCE:    VRMAN, PARAMETER = 0.1, UPDP1 = ENDSTE
+     END_MATERIAL  
+   END_PROPERTIES  
+END_PHYSICAL_PROBLEM  
+$--------------------------------------------------
+NUMERICAL_TREATMENT  
+     MESH
+      MASS:             CONSISTENT
+      ELEMENTAL_TO_CSR: ON
+     END_MESH
+     ELSEST  
+       STRATEGY: BIN  
+       NUMBER:   100,100,100  
+        DATAF:   LINKED_LIST  
+     END_ELSEST  
+    HESSIAN      OFF   
+    LAPLACIAN    OFF     
+END_NUMERICAL_TREATMENT  
+$--------------------------------------------------
+OUTPUT_&_POST_PROCESS  
+  ON_LAST
+  STEP_OVER: 50
+$  POSTPROCES TURBULENCE
+$  POSTPROCES COMMUNICATION
+$  POSTPROCES MASSMATRIX
+$  POSTPROCESS CODNO
+END_OUTPUT_&_POST_PROCESS  
+$--------------------------------------------------

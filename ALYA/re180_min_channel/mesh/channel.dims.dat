@@ -1,0 +1,5 @@
+NODAL_POINTS            463393 
+ELEMENTS                442368 
+SPACE_DIMENSIONS        3 
+TYPES_OF_ELEMENTS       HEX08
+BOUNDARIES              4608 

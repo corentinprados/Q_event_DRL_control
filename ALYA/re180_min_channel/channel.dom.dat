@@ -1,0 +1,30 @@
+$--------------------------------------------------
+DIMENSIONS
+  INCLUDE mesh/channel.dims.dat
+  
+  FIELDS = 1 
+    FIELD: 1, DIMENSIONS=3, NODES
+  END_FIELDS
+END_DIMENSIONS
+$--------------------------------------------------
+STRATEGY
+  GROUPS = 500, SEQUENTIAL_FRONTAL
+  DOMAIN_INTEGRATION_POINTS:  0
+  INTEGRATION_RULE:           OPEN
+  BOUNDARY_ELEMENT:           OFF
+  EXTRAPOLATE:                ON
+  PERIODICITY:                MATRIX
+END_STRATEGY
+$--------------------------------------------------
+GEOMETRY
+END_GEOMETRY
+$--------------------------------------------------
+SETS
+END_SETS
+$--------------------------------------------------
+BOUNDARY_CONDITIONS
+END_BOUNDARIES_CONDITIONS
+$--------------------------------------------------
+FIELDS
+END_FIELDS
+$-------------------------------------------------------------

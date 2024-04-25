@@ -1,0 +1,89 @@
+name, hostname, date, cores, module, function, type, parent_module, parent_function, parent_type, category, unit, value
+chan180, unknown, 20240424, 6, kernel, all, average time, , , , computation+communications+io, s, 0.93777458E+003
+chan180, unknown, 20240424, 6, kernel, all, maximum time, , , , computation+communications+io, s, 0.93777458E+003
+chan180, unknown, 20240424, 6, kernel, all, master memory, , , , memory, B, 0.10782443E+010
+chan180, unknown, 20240424, 6, kernel, all, maximum memory, , , , memory, B, 0.12636416E+010
+chan180, unknown, 20240424, 6, kernel, all, average memory, , , , memory, B, 0.12563598E+010
+chan180, unknown, 20240424, 6, read, all, average time, kernel, all, average time, io, s, 0.78758736E-001
+chan180, unknown, 20240424, 6, read, geometry, average time, read, all, average time, io, s, 0.65671853E-001
+chan180, unknown, 20240424, 6, read, sets, average time, read, all, average time, io, s, 0.13683310E-002
+chan180, unknown, 20240424, 6, read, boundary conditions, average time, read, all, average time, io, s, 0.13719270E-002
+chan180, unknown, 20240424, 6, read, fields, average time, read, all, average time, io, s, 0.10346625E-001
+chan180, unknown, 20240424, 6, read, all, maximum time, kernel, all, maximum time, io, s, 0.78758736E-001
+chan180, unknown, 20240424, 6, read, geometry, maximum time, read, all, maximum time, io, s, 0.65671853E-001
+chan180, unknown, 20240424, 6, read, sets, maximum time, read, all, maximum time, io, s, 0.13683310E-002
+chan180, unknown, 20240424, 6, read, boundary conditions, maximum time, read, all, maximum time, io, s, 0.13719270E-002
+chan180, unknown, 20240424, 6, read, fields, maximum time, read, all, maximum time, io, s, 0.10346625E-001
+chan180, unknown, 20240424, 6, init, all, average time, kernel, all, average time, computation+communications, s, 0.42937099E+001
+chan180, unknown, 20240424, 6, init, mesh partition, average time, init, all, average time, computation+communications, s, 0.79535248E+000
+chan180, unknown, 20240424, 6, init, mesh multiplication, average time, init, all, average time, computation+communications, s, 0.64585000E-004
+chan180, unknown, 20240424, 6, init, additional arrays, average time, init, all, average time, computation+communications, s, 0.41556467E+000
+chan180, unknown, 20240424, 6, init, all, maximum time, kernel, all, maximum time, computation+communications, s, 0.42937099E+001
+chan180, unknown, 20240424, 6, init, mesh partition, maximum time, init, all, maximum time, computation+communications, s, 0.79535248E+000
+chan180, unknown, 20240424, 6, init, mesh multiplication, maximum time, init, all, maximum time, computation+communications, s, 0.64585000E-004
+chan180, unknown, 20240424, 6, init, additional arrays, maximum time, init, all, maximum time, computation+communications, s, 0.41556467E+000
+chan180, unknown, 20240424, 6, domain, all, average time, init, all, average time, computation+communications, s, 0.22874403E+001
+chan180, unknown, 20240424, 6, domain, groups, average time, domain, all, average time, computation+communications, s, 0.58310971E+000
+chan180, unknown, 20240424, 6, domain, halos, average time, domain, all, average time, computation+communications, s, 0.32110977E-001
+chan180, unknown, 20240424, 6, domain, elsest, average time, domain, all, average time, computation+communications, s, 0.13350999E-004
+chan180, unknown, 20240424, 6, domain, coupling, average time, domain, all, average time, computation+communications, s, 0.12990004E-005
+chan180, unknown, 20240424, 6, domain, output, average time, domain, all, average time, computation+communications, s, 0.56801147E-001
+chan180, unknown, 20240424, 6, domain, all, maximum time, init, all, maximum time, computation+communications, s, 0.22874403E+001
+chan180, unknown, 20240424, 6, domain, groups, maximum time, domain, all, maximum time, computation+communications, s, 0.58310971E+000
+chan180, unknown, 20240424, 6, domain, halos, maximum time, domain, all, maximum time, computation+communications, s, 0.32110977E-001
+chan180, unknown, 20240424, 6, domain, elsest, maximum time, domain, all, maximum time, computation+communications, s, 0.13350999E-004
+chan180, unknown, 20240424, 6, domain, coupling, maximum time, domain, all, maximum time, computation+communications, s, 0.12990004E-005
+chan180, unknown, 20240424, 6, domain, output, maximum time, domain, all, maximum time, computation+communications, s, 0.56801147E-001
+chan180, unknown, 20240424, 6, kermod, properties, average time, kernel, all, average time, computation+communications, s, 0.59969400E-003
+chan180, unknown, 20240424, 6, kermod, properties, maximum time, kernel, all, maximum time, computation+communications, s, 0.59969400E-003
+chan180, unknown, 20240424, 6, nastin, all, average time, kernel, all, average time, computation+communications+io, s, 0.93384947E+003
+chan180, unknown, 20240424, 6, nastin, all, maximum time, kernel, all, maximum time, computation+communications+io, s, 0.93384947E+003
+chan180, unknown, 20240424, 6, nastin, all, maximum memory, kernel, all, maximum memory, memory, B, 0.87565280E+008
+chan180, unknown, 20240424, 6, nastin, all, average memory, kernel, all, average memory, memory, B, 0.86945955E+008
+chan180, unknown, 20240424, 6, nastin, element assembly, average time, nastin, all, average time, computation+communications, s, 0.37866179E+003
+chan180, unknown, 20240424, 6, nastin, element assembly, maximum time, nastin, all, maximum time, computation+communications, s, 0.38982978E+003
+chan180, unknown, 20240424, 6, nastin, element assembly, load balance, , , , computation+communications, , 0.97384787E+000
+chan180, unknown, 20240424, 6, nastin, element assembly, variability, , , , computation+communications, , 0.60056137E+000
+chan180, unknown, 20240424, 6, nastin, element assembly, time per element, , , , computation+communications, s, 0.12193563E-004
+chan180, unknown, 20240424, 6, nastin, boundary assembly, average time, nastin, all, average time, computation+communications, s, 0.27118411E+000
+chan180, unknown, 20240424, 6, nastin, boundary assembly, maximum time, nastin, all, maximum time, computation+communications, s, 0.33383776E+000
+chan180, unknown, 20240424, 6, nastin, boundary assembly, load balance, , , , computation+communications, , 0.81576875E+000
+chan180, unknown, 20240424, 6, nastin, boundary assembly, time per boundary, , , , computation+communications, s, 0.83908646E-006
+chan180, unknown, 20240424, 6, nastin, output, average time, nastin, all, average time, io, s, 0.33225762E-001
+chan180, unknown, 20240424, 6, nastin, output, maximum time, nastin, all, maximum time, io, s, 0.69832451E+000
+chan180, unknown, 20240424, 6, nastin, run beginning, average time, nastin, all, average time, computation+communications+io, s, 0.66225415E+000
+chan180, unknown, 20240424, 6, nastin, run beginning, maximum time, nastin, all, maximum time, computation+communications+io, s, 0.66225415E+000
+chan180, unknown, 20240424, 6, nastin, initial solution, average time, nastin, all, average time, computation+communications+io, s, 0.93029200E-001
+chan180, unknown, 20240424, 6, nastin, initial solution, maximum time, nastin, all, maximum time, computation+communications+io, s, 0.93029200E-001
+chan180, unknown, 20240424, 6, nastin, step beginning, average time, nastin, all, average time, computation+communications+io, s, 0.76596743E+001
+chan180, unknown, 20240424, 6, nastin, step beginning, maximum time, nastin, all, maximum time, computation+communications+io, s, 0.76596743E+001
+chan180, unknown, 20240424, 6, nastin, step ending, average time, nastin, all, average time, computation+communications+io, s, 0.21979495E+000
+chan180, unknown, 20240424, 6, nastin, step ending, maximum time, nastin, all, maximum time, computation+communications+io, s, 0.21979495E+000
+chan180, unknown, 20240424, 6, nastin, iteration beginning, average time, nastin, all, average time, computation+communications+io, s, 0.30634469E+000
+chan180, unknown, 20240424, 6, nastin, iteration beginning, maximum time, nastin, all, maximum time, computation+communications+io, s, 0.30634469E+000
+chan180, unknown, 20240424, 6, nastin, iteration ending, average time, nastin, all, average time, computation+communications+io, s, 0.21182872E+000
+chan180, unknown, 20240424, 6, nastin, iteration ending, maximum time, nastin, all, maximum time, computation+communications+io, s, 0.21182872E+000
+chan180, unknown, 20240424, 6, nastin, iteration other, average time, nastin, all, average time, computation+communications+io, s, 0.87871575E+002
+chan180, unknown, 20240424, 6, nastin, iteration other, maximum time, nastin, all, maximum time, computation+communications+io, s, 0.76640497E+002
+chan180, unknown, 20240424, 6, nastin, restart reading, average time, nastin, all, average time, io, s, 0.00000000E+000
+chan180, unknown, 20240424, 6, nastin, restart reading, maximum time, nastin, all, maximum time, io, s, 0.00000000E+000
+chan180, unknown, 20240424, 6, nastin, restart writing, average time, nastin, all, average time, io, s, 0.19675607E-001
+chan180, unknown, 20240424, 6, nastin, restart writing, maximum time, nastin, all, maximum time, io, s, 0.19675607E-001
+chan180, unknown, 20240424, 6, nastin, solvers, average time, nastin, all, average time, computation+communications, s, 0.45816229E+003
+chan180, unknown, 20240424, 6, nastin, solvers, maximum time, nastin, all, maximum time, computation+communications, s, 0.45816271E+003
+chan180, unknown, 20240424, 6, nastin, spmv 2, average time, nastin, solver 2, average time, computation+communications, s, 0.28518583E+003
+chan180, unknown, 20240424, 6, nastin, spmv 2, maximum time, nastin, solver 2, maximum time, computation+communications, s, 0.28572161E+003
+chan180, unknown, 20240424, 6, nastin, dot 2, average time, nastin, solver 2, average time, computation+communications, s, 0.21862406E+002
+chan180, unknown, 20240424, 6, nastin, dot 2, maximum time, nastin, solver 2, maximum time, computation+communications, s, 0.24421167E+002
+chan180, unknown, 20240424, 6, nastin, solver 2, average time, nastin, solvers, average time, computation+communications, s, 0.37431919E+003
+chan180, unknown, 20240424, 6, nastin, solver 2, maximum time, nastin, solvers, maximum time, computation+communications, s, 0.37431919E+003
+chan180, unknown, 20240424, 6, nastin, spmv 9, average time, nastin, solver 9, average time, computation+communications, s, 0.81416012E+002
+chan180, unknown, 20240424, 6, nastin, spmv 9, maximum time, nastin, solver 9, maximum time, computation+communications, s, 0.81442338E+002
+chan180, unknown, 20240424, 6, nastin, dot 9, average time, nastin, solver 9, average time, computation+communications, s, 0.43252721E+001
+chan180, unknown, 20240424, 6, nastin, dot 9, maximum time, nastin, solver 9, maximum time, computation+communications, s, 0.43751808E+001
+chan180, unknown, 20240424, 6, nastin, solver 9, average time, nastin, solvers, average time, computation+communications, s, 0.83843091E+002
+chan180, unknown, 20240424, 6, nastin, solver 9, maximum time, nastin, solvers, maximum time, computation+communications, s, 0.83843091E+002
+chan180, unknown, 20240424, 6, nastin, semi-implicit, average time, nastin, iteration other, average time, computation+communications, s, 0.69781097E+002
+chan180, unknown, 20240424, 6, nastin, semi-implicit, maximum time, nastin, iteration other, maximum time, computation+communications, s, 0.70077782E+002
+chan180, unknown, 20240424, 6, amr, all, average time, kernel, all, average time, computation+communications, s, 0.00000000E+000
+chan180, unknown, 20240424, 6, amr, all, maximum time, kernel, all, maximum time, computation+communications, s, 0.00000000E+000

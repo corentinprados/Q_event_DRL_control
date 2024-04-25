@@ -1,0 +1,138 @@
+\documentclass[10pt]{article}
+\usepackage[dvips]{epsfig}
+\begin{document}
+\title{Sum up of Alya run for problem: chan180}
+\maketitle
+\section{Problem definition}
+\subsection{Physical problem}
+In this run, Alya solves the modules NASTIN,KERMOD,
+according to the following coupling strategy:
+\begin{itemize}
+  \item[] {\bf do}      1000000 time iterations 
+  \begin{itemize}
+\item[] block 1: {\bf do}   1 coupling iterations
+\begin{itemize}
+  \item[-] Solve module NASTIN
+\end{itemize}
+\item[] {\bf enddo} coupling iteration
+  \end{itemize}
+\item[] {\bf enddo} time iteration
+\end{itemize}
+The time interval is $[
+0.000000E+00
+,
+0.100000E+01
+]$.
+Let $\delta t_{{\rm cri},i}$ be the critical time steps of module $i$,
+and let $\alpha_{{\rm saf},i}$ be the safety factor of module $i$.
+The time step $\delta t$ is taken as the minimum of the module critical time steps
+multiplied by the corresponding safety factor such that
+\begin{eqnarray*}
+\delta t = \min_{i} \alpha_{{\rm saf},i} \delta t_{{\rm cri},i}
+\quad \mbox{for all modules $i$ solved}
+\end{eqnarray*}
+\subsection{Geometrical data}
+The computational domain belong to
+$R^3$.
+Let npoin be the number of nodes, nelem the number
+of voulme elements and nboun the number of boundary elements.
+We have:
+\begin{eqnarray*}
+ \mbox{npoin} &=&        0 \\
+ \mbox{nelem} &=&        0 \\
+ \mbox{nboun} &=&        0
+\end{eqnarray*}
+The domain data are
+\begin{itemize}
+   \item Total volume= 0.427200E+01
+   \item Averaged element volume= 0.965712E-05
+   \item Minimum element volume= 0.165228E-05
+         for element 204097
+   \item Maximum element volume= 0.192611E-04
+         for element 39840
+\end{itemize}
+The elements that compose the volume and boundary meshes, as well
+as their corresponding integration rules and numbers of Gauss points
+is given in the following table.
+\begin{center}
+\begin{math}
+\begin{array}{lllllll}
+\hline
+\textrm{Element} & \textrm{Total \#}  & \textrm{Dimension} & \textrm{Nodes \#} & 
+\textrm{Integr.} & \textrm{Gauss}     & \textrm{Laplacian} \\
+\textrm{}        & \textrm{}          & \textrm{}          & \textrm{} & 
+\textrm{rule}    & \textrm{points \#} & \textrm{} \\
+\hline
+\textrm{QUA04} &      4608 & 2 &  4 & \textrm{open} &  4 & \textrm{no}\\
+\textrm{HEX08} &    442368 & 3 &  8 & \textrm{open} &  8 & \textrm{no}\\
+\hline
+\end{array}
+\end{math}
+\mbox{Table: Volume and boundary elements}
+\end{center}
+\section{Module data}
+\subsection{NASTIN: incompressible Navier-Stokes equations}
+\subsubsection{Physical problem}
+The equations solved are the
+transient Navier-Stokes equations.
+They read:
+\begin{eqnarray*}
+\rho \frac{\partial \mbox{\boldmath $u$}}{\partial t}
++ \rho [(\mbox{\boldmath $u$} \cdot \nabla)\mbox{\boldmath $u$}\mbox{\boldmath $u$} (\nabla \cdot \mbox{\boldmath $u$})]
+-\nabla \cdot [2\mu\mbox{\boldmath $\varepsilon$}(\mbox{\boldmath $u$)}] 
++ \nabla p 
+=\mbox{\boldmath $0$}
+\\ \qquad
+\nabla \cdot \mbox{\boldmath $u$} = 0
+\end{eqnarray*}
+The physical properties are
+\begin{eqnarray*}
+    \rho &=& 0.100000E+01
+ \\ \mu  &=& 0.100000E+01
+\end{eqnarray*}
+\subsubsection{Numerical treatment}
+The different ingredients of the numerical treatment are:
+\begin{itemize}
+  \item Spatial treatment:
+  \begin{itemize}
+    \item Stabilization: Algebaric SubGrid Scale (ASGS)
+ without convection tracking
+ and without time tracking
+ and where the stabilization parameters are
+          \begin{eqnarray*}
+\tau_1 &=& \frac{1}{{\displaystyle c_1 \frac{\mu}{h^2}}+ {\displaystyle c_2 \rho \frac{|\mbox{\boldmath $u$}|}{h_c}}} \\\tau_2 &=& \frac{c_4}{c_1 \mu +c_2 \rho h_c |\mbox{\boldmath $u$}|}
+          \end{eqnarray*}
+          with $h$ and $h_c$ being the minimum element lengths
+          with the following values for the constants
+          \begin{eqnarray*}
+              c_1 &=& 0.100000E+01
+           \\ c_2 &=& 0.100000E+01
+           \\ c_3 &=& 0.100000E+01
+           \\ c_4 &=& 0.100000E+01
+          \end{eqnarray*}
+  \end{itemize}
+  \item Temporal treatment:
+  \begin{itemize}
+    \item Time integration strategy:     \item Order of integration: 2
+\end{itemize}
+\end{itemize}
+\section{Results}
+The global convergence is shown in Figure \ref{fig:global-convergence}.
+\begin{figure}
+\centerline{\psfig{figure=latex-cvg.ps,width=0.95\textwidth}}
+\caption{Global convergence.}
+\label{fig:global-convergence}
+\end{figure}
+NASTIN convergence is shown in Figure \ref{fig:NASTIN-convergence}.
+NASTIN solvers numbers of iterations is shown in Figure \ref{fig:NASTIN-solver}.
+\begin{figure}
+\centerline{\psfig{figure=latex-nastin-cvg.ps,width=0.95\textwidth}}
+\caption{NASTIN convergence.}
+\label{fig:NASTIN-convergence}
+\end{figure}
+\begin{figure}
+\centerline{\psfig{figure=latex-nastin-sol.ps,width=0.95\textwidth}}
+\caption{NASTIN solvers numbers of iterations.}
+\label{fig:NASTIN-solver}
+\end{figure}
+\end{document}

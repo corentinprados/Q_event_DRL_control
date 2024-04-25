@@ -1,0 +1,1879 @@
+
+
+
+        --------
+     |- A L Y A: chan180
+        --------
+
+        NUMBER OF BOXES (FINE)=          256     256     256
+        NUMBER OF BOXES (COARSE)=          2       2       2
+        SFC PARTITIONING STATISTICS
+          Total number of bins=     1.678E+07
+          Ratio touched/total bin=  2.087E-02
+          Max weight=               3.200E+01
+          Ave weight=               1.011E+01
+          Granularity (max/sum)=    9.042E-06
+
+
+        -----------------
+*    |- MESH PARTITIONING
+        -----------------
+
+        METHOD:                     HILBERT SPACE FILLING CURVE
+        EXECUTION MODE              PARALLEL
+        WEIGHT CRITERION FOR LB:    GAUSS POINTS
+        TOTAL TIME:                 7.945E-01
+          Redistribution from I/O=  1.010E-01 ( 12.72 % )
+          Weights calculation=      5.196E-03 (  0.65 % )
+          Partitioning=             5.396E-01 ( 67.91 % )
+          Mesh redistribution=      5.152E-02 (  6.48 % )
+          Communication arrays=     9.717E-02 ( 12.23 % )
+
+
+        ------------------------
+*    |- INTER COLOR COMMUNICATOR
+        ------------------------
+
+
+        TOTAL NUMBER OF CODES=         1
+        TOTAL NUMBER OF ZONES=         1
+        TOTAL NUMBER OF SUBDS=         1
+
+        NUMBER OF ZONES IN MY CODE=    1
+        NUMBER OF SUBDS IN MY CODE=    1
+                                    
+        LIST OF COMMUNICATORS:      
+
+        CODE=(  0,  0), ZONE=(  0,  0), SUBD=(  0,  0)
+        CODE=(  1,  1), ZONE=(  0,  0), SUBD=(  0,  0)
+        CODE=(  1,  1), ZONE=(  0,  0), SUBD=(  1,  1)
+        CODE=(  1,  1), ZONE=(  1,  1), SUBD=(  0,  0)
+
+
+        ------------------------
+*    |- PARTITIONS BIN STRUCTURE
+        ------------------------
+
+        BIN DIMENSIONS=                 2    2    2
+
+
+        --------------------
+*    |- SUMMARY OF PARTITION
+        --------------------
+
+        # SUBDOMAINS=                   5
+        TOTAL # NODES=             489173 (INTERIOR+REPEATED BOUNDARY)
+
+        MIN. # NPOIN=               96813 (SUBDOMAIN     3)
+        MAX. # NPOIN=               98534 (SUBDOMAIN     1)
+        AVE. # NPOIN=               97834
+        MIN. # NELEM=               88472 (SUBDOMAIN     2)
+        MAX. # NELEM=               88476 (SUBDOMAIN     3)
+        AVE. # NELEM=               88473
+        LB     NELEM=               1.000
+        MIN. # NELEM(WEIGHT)=      707776 (SUBDOMAIN     2)
+        MAX. # NELEM(WEIGHT)=      707808 (SUBDOMAIN     3)
+        AVE. # NELEM(WEIGHT)=      707788
+        LB     NELEM(WEIGHT)=       1.000
+        MIN. # NBOUN=                 852 (SUBDOMAIN     2)
+        MAX. # NBOUN=                1140 (SUBDOMAIN     3)
+        AVE. # NBOUN=                 921
+        MIN. # NZDOM=             2463413 (SUBDOMAIN     3)
+        MAX. # NZDOM=             2477386 (SUBDOMAIN     1)
+        AVE. # NZDOM=             2471572
+
+        MIN. # NNEIG=                   4 (SUBDOMAIN     1)
+        MAX. # NNEIG=                   5 (SUBDOMAIN     3)
+        AVE. # NNEIG=                   4
+        MIN. # NBBOU=               15461 (SUBDOMAIN     3)
+        MAX. # NBBOU=               18680 (SUBDOMAIN     1)
+        AVE. # NBBOU=               17395
+
+
+        ------------------------
+*    |- BOUNDARY CONDITION CODES
+        ------------------------
+
+
+        CODE=               1
+        CODE=               2
+
+
+        -----------------
+*    |- INTEGRATION RULES
+        -----------------
+
+
+        ELEMENT TYPE:                 QUA04
+           Rule:                       OPEN
+           Number Gauss points=           4
+           Max. polynomial order=         3
+        ELEMENT TYPE:                 HEX08
+           Rule:                       OPEN
+           Number Gauss points=           8
+           Max. polynomial order=         3
+
+
+        --------------------
+*    |- OPTIMIZATION OPTIONS
+        --------------------
+
+
+        MPI3:                       OFF
+        BLAS:                       OFF
+        VECTOR SIZE=                 16 (PARAMETER)
+        LOC. TO GLOB. COEF IN CSR:  ON, AVERAGE MEMORY=   21.60 Mbytes
+        ELEMENT DATA BASE:          OFF
+        NODE RENUMBERING:           METIS 5.1.0
+        ELEMENT RENUMBERING:        MESH GRAPH FIRST TOUCH
+
+
+        ----------------------
+*    |- HYBRID PARALLELIZATION
+        ----------------------
+
+        OFF
+
+
+        -----------------------------
+*    |- TIMES OF ALGEBRAIC OPERATIONS: AVERAGE OVER     2 RUNS
+        -----------------------------
+
+
+        |- SpMV IN CSR FORMAT (without OpenMP):   
+
+           Computation:             
+              Average CPU time:        6.25517 ms
+              Maximum CPU time:        7.90354 ms
+              Load balance:            0.79144
+           Point-to-point comm.:    
+              Average CPU time:        1.89269 ms
+              Maximum CPU time:        2.97282 ms
+              Load balance:            0.63666
+           Overall:                 
+              Average CPU time:        8.14786 ms
+              Maximum CPU time:        8.17143 ms
+              Load balance:            0.99712
+
+        |- DOT PRODUCT (without OpenMP):
+
+           Computation:             
+              Average CPU time:      120.27290 mus
+              Maximum CPU time:      128.92450 mus
+              Load balance:            0.93289
+           Global comm.:            
+              Average CPU time:       29.27140 mus
+              Maximum CPU time:       63.76400 mus
+              Load balance:            0.45906
+           Overall:                 
+              Average CPU time:      149.54430 mus
+              Maximum CPU time:      186.29650 mus
+              Load balance:            0.80272
+
+
+        -----------------------
+*    |- SUMMARY OF PROBLEM DATA
+        -----------------------
+
+
+        |- GENERAL DATA:
+
+           Modules solved:       NASTIN,KERMOD
+           Blok definition:      1:NASTIN
+           Time step strategy:   MINIMUM OF CRITICAL TIME STEPS
+           Time step=             0.0000E+00
+           Time range=           [ 0.0000E+00, 1.0000E+00]
+
+        |- DOMAIN DATA:
+
+           Domain dimension=               3
+           --------------------- 
+           Bandwith (average)=        94612
+           Profile (average)=     1.0020E+09
+           --------------------- 
+           Total volume=          4.2720E+00
+           Ave. element volume=   9.6571E-06
+           Min. element volume=   1.6523E-06 (element 204097)
+           Max. element volume=   1.9261E-05 (element 39840)
+           --------------------- 
+           Total elements=            442368
+           Extension elements=             0
+           Hole elements=                  0
+           Elements used:        442368 HEX08
+           Gauss points (rule)=  8(open)
+           --------------------- 
+           Total boundaries=            4608
+           Extension boundaries=           0
+           Hole boundaries=                0
+           Boundaries used:      4608 QUA04
+           Gauss points (rule)=  4(open)
+           --------------------- 
+           Total nodes=               444672
+           Hole nodes=                     0
+
+        |- MATERIAL DATA:
+
+           Material=    1, volume=  4.2720E+00
+
+
+        ----------------------
+*    |- SUMMARY OF CONVERGENCE
+        ----------------------
+
+
+        |- TIME STEP NUMBER:            1
+           Current time step dt =  3.069E-02
+           Current time t       =  3.069E-02
+           NASTIN:
+           - Critical time step dtc:  3.069E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.119E+01
+           Elapsed CPU time:         1.119E+01
+           Residual of VELOCITY          :  2.676E-02
+           Residual of PRESSURE          :  1.000E+00
+
+        |- TIME STEP NUMBER:            2
+           Current time step dt =  3.044E-02
+           Current time t       =  6.113E-02
+           NASTIN:
+           - Critical time step dtc:  3.044E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.993E+01
+           Elapsed CPU time:         8.735E+00
+           Residual of VELOCITY          :  1.220E-01
+           Residual of PRESSURE          :  1.000E+00
+
+        |- TIME STEP NUMBER:            3
+           Current time step dt =  4.196E-03
+           Current time t       =  6.532E-02
+           NASTIN:
+           - Critical time step dtc:  4.196E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.644E+01
+           Elapsed CPU time:         6.509E+00
+           Residual of VELOCITY          :  1.156E-01
+           Residual of PRESSURE          :  1.133E-02
+
+        |- TIME STEP NUMBER:            4
+           Current time step dt =  2.186E-02
+           Current time t       =  8.718E-02
+           NASTIN:
+           - Critical time step dtc:  2.186E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.307E+01
+           Elapsed CPU time:         6.629E+00
+           Residual of VELOCITY          :  6.243E-02
+           Residual of PRESSURE          :  9.895E-03
+
+        |- TIME STEP NUMBER:            5
+           Current time step dt =  1.475E-02
+           Current time t       =  1.019E-01
+           NASTIN:
+           - Critical time step dtc:  1.475E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.927E+01
+           Elapsed CPU time:         6.207E+00
+           Residual of VELOCITY          :  5.336E-02
+           Residual of PRESSURE          :  3.824E-04
+
+        |- TIME STEP NUMBER:            6
+           Current time step dt =  1.564E-02
+           Current time t       =  1.176E-01
+           NASTIN:
+           - Critical time step dtc:  1.564E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.564E+01
+           Elapsed CPU time:         6.369E+00
+           Residual of VELOCITY          :  8.109E-03
+           Residual of PRESSURE          :  1.364E-04
+
+        |- TIME STEP NUMBER:            7
+           Current time step dt =  1.600E-02
+           Current time t       =  1.336E-01
+           NASTIN:
+           - Critical time step dtc:  1.600E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.426E+01
+           Elapsed CPU time:         8.616E+00
+           Residual of VELOCITY          :  1.522E-01
+           Residual of PRESSURE          :  7.755E-01
+
+        |- TIME STEP NUMBER:            8
+           Current time step dt =  5.749E-03
+           Current time t       =  1.393E-01
+           NASTIN:
+           - Critical time step dtc:  5.749E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.118E+01
+           Elapsed CPU time:         6.926E+00
+           Residual of VELOCITY          :  1.458E-01
+           Residual of PRESSURE          :  2.809E-03
+
+        |- TIME STEP NUMBER:            9
+           Current time step dt =  1.335E-02
+           Current time t       =  1.527E-01
+           NASTIN:
+           - Critical time step dtc:  1.335E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.816E+01
+           Elapsed CPU time:         6.978E+00
+           Residual of VELOCITY          :  5.061E-02
+           Residual of PRESSURE          :  2.045E-03
+
+        |- TIME STEP NUMBER:           10
+           Current time step dt =  1.483E-02
+           Current time t       =  1.675E-01
+           NASTIN:
+           - Critical time step dtc:  1.483E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.401E+01
+           Elapsed CPU time:         5.847E+00
+           Residual of VELOCITY          :  4.142E-02
+           Residual of PRESSURE          :  1.206E-04
+
+        |- TIME STEP NUMBER:           11
+           Current time step dt =  1.539E-02
+           Current time t       =  1.829E-01
+           NASTIN:
+           - Critical time step dtc:  1.539E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.031E+01
+           Elapsed CPU time:         6.302E+00
+           Residual of VELOCITY          :  8.090E-03
+           Residual of PRESSURE          :  3.502E-05
+
+        |- TIME STEP NUMBER:           12
+           Current time step dt =  1.647E-02
+           Current time t       =  1.994E-01
+           NASTIN:
+           - Critical time step dtc:  1.647E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.894E+01
+           Elapsed CPU time:         8.633E+00
+           Residual of VELOCITY          :  1.228E-01
+           Residual of PRESSURE          :  3.436E-01
+
+        |- TIME STEP NUMBER:           13
+           Current time step dt =  4.627E-03
+           Current time t       =  2.040E-01
+           NASTIN:
+           - Critical time step dtc:  4.627E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         9.587E+01
+           Elapsed CPU time:         6.922E+00
+           Residual of VELOCITY          :  1.187E-01
+           Residual of PRESSURE          :  2.137E-03
+
+        |- TIME STEP NUMBER:           14
+           Current time step dt =  1.683E-02
+           Current time t       =  2.208E-01
+           NASTIN:
+           - Critical time step dtc:  1.683E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.029E+02
+           Elapsed CPU time:         7.065E+00
+           Residual of VELOCITY          :  7.800E-02
+           Residual of PRESSURE          :  1.655E-03
+
+        |- TIME STEP NUMBER:           15
+           Current time step dt =  2.171E-03
+           Current time t       =  2.230E-01
+           NASTIN:
+           - Critical time step dtc:  2.171E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.087E+02
+           Elapsed CPU time:         5.802E+00
+           Residual of VELOCITY          :  2.153E-02
+           Residual of PRESSURE          :  1.189E-04
+
+        |- TIME STEP NUMBER:           16
+           Current time step dt =  5.350E-03
+           Current time t       =  2.283E-01
+           NASTIN:
+           - Critical time step dtc:  5.350E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.145E+02
+           Elapsed CPU time:         5.734E+00
+           Residual of VELOCITY          :  1.910E-02
+           Residual of PRESSURE          :  8.322E-05
+
+        |- TIME STEP NUMBER:           17
+           Current time step dt =  5.361E-03
+           Current time t       =  2.337E-01
+           NASTIN:
+           - Critical time step dtc:  5.361E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.236E+02
+           Elapsed CPU time:         9.114E+00
+           Residual of VELOCITY          :  2.073E-01
+           Residual of PRESSURE          :  7.221E-01
+
+        |- TIME STEP NUMBER:           18
+           Current time step dt =  2.502E-03
+           Current time t       =  2.362E-01
+           NASTIN:
+           - Critical time step dtc:  2.502E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.298E+02
+           Elapsed CPU time:         6.179E+00
+           Residual of VELOCITY          :  1.934E-01
+           Residual of PRESSURE          :  1.433E-03
+
+        |- TIME STEP NUMBER:           19
+           Current time step dt =  7.025E-03
+           Current time t       =  2.432E-01
+           NASTIN:
+           - Critical time step dtc:  7.025E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.360E+02
+           Elapsed CPU time:         6.255E+00
+           Residual of VELOCITY          :  7.487E-02
+           Residual of PRESSURE          :  9.646E-04
+
+        |- TIME STEP NUMBER:           20
+           Current time step dt =  3.126E-03
+           Current time t       =  2.463E-01
+           NASTIN:
+           - Critical time step dtc:  3.126E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.429E+02
+           Elapsed CPU time:         6.881E+00
+           Residual of VELOCITY          :  2.731E-02
+           Residual of PRESSURE          :  5.437E-05
+
+        |- TIME STEP NUMBER:           21
+           Current time step dt =  4.820E-03
+           Current time t       =  2.512E-01
+           NASTIN:
+           - Critical time step dtc:  4.820E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.490E+02
+           Elapsed CPU time:         6.146E+00
+           Residual of VELOCITY          :  1.505E-02
+           Residual of PRESSURE          :  2.174E-05
+
+        |- TIME STEP NUMBER:           22
+           Current time step dt =  5.193E-03
+           Current time t       =  2.564E-01
+           NASTIN:
+           - Critical time step dtc:  5.193E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.578E+02
+           Elapsed CPU time:         8.766E+00
+           Residual of VELOCITY          :  1.767E-01
+           Residual of PRESSURE          :  3.537E-01
+
+        |- TIME STEP NUMBER:           23
+           Current time step dt =  1.410E-03
+           Current time t       =  2.578E-01
+           NASTIN:
+           - Critical time step dtc:  1.410E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.644E+02
+           Elapsed CPU time:         6.566E+00
+           Residual of VELOCITY          :  1.614E-01
+           Residual of PRESSURE          :  1.182E-03
+
+        |- TIME STEP NUMBER:           24
+           Current time step dt =  4.269E-03
+           Current time t       =  2.620E-01
+           NASTIN:
+           - Critical time step dtc:  4.269E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.707E+02
+           Elapsed CPU time:         6.294E+00
+           Residual of VELOCITY          :  6.333E-02
+           Residual of PRESSURE          :  9.226E-04
+
+        |- TIME STEP NUMBER:           25
+           Current time step dt =  7.347E-04
+           Current time t       =  2.628E-01
+           NASTIN:
+           - Critical time step dtc:  7.347E-04
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.767E+02
+           Elapsed CPU time:         6.036E+00
+           Residual of VELOCITY          :  2.622E-02
+           Residual of PRESSURE          :  6.019E-05
+
+        |- TIME STEP NUMBER:           26
+           Current time step dt =  1.628E-03
+           Current time t       =  2.644E-01
+           NASTIN:
+           - Critical time step dtc:  1.628E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.825E+02
+           Elapsed CPU time:         5.783E+00
+           Residual of VELOCITY          :  1.246E-02
+           Residual of PRESSURE          :  4.055E-05
+
+        |- TIME STEP NUMBER:           27
+           Current time step dt =  2.456E-03
+           Current time t       =  2.669E-01
+           NASTIN:
+           - Critical time step dtc:  2.456E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.881E+02
+           Elapsed CPU time:         5.588E+00
+           Residual of VELOCITY          :  2.100E-02
+           Residual of PRESSURE          :  1.013E-05
+
+        |- TIME STEP NUMBER:           28
+           Current time step dt =  2.929E-03
+           Current time t       =  2.698E-01
+           NASTIN:
+           - Critical time step dtc:  2.929E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         1.968E+02
+           Elapsed CPU time:         8.736E+00
+           Residual of VELOCITY          :  1.544E-01
+           Residual of PRESSURE          :  3.213E-01
+
+        |- TIME STEP NUMBER:           29
+           Current time step dt =  1.856E-03
+           Current time t       =  2.716E-01
+           NASTIN:
+           - Critical time step dtc:  1.856E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.032E+02
+           Elapsed CPU time:         6.428E+00
+           Residual of VELOCITY          :  1.430E-01
+           Residual of PRESSURE          :  7.559E-04
+
+        |- TIME STEP NUMBER:           30
+           Current time step dt =  3.854E-03
+           Current time t       =  2.755E-01
+           NASTIN:
+           - Critical time step dtc:  3.854E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.096E+02
+           Elapsed CPU time:         6.342E+00
+           Residual of VELOCITY          :  2.753E-02
+           Residual of PRESSURE          :  4.573E-04
+
+        |- TIME STEP NUMBER:           31
+           Current time step dt =  4.087E-03
+           Current time t       =  2.796E-01
+           NASTIN:
+           - Critical time step dtc:  4.087E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.162E+02
+           Elapsed CPU time:         6.583E+00
+           Residual of VELOCITY          :  1.683E-02
+           Residual of PRESSURE          :  1.454E-05
+
+        |- TIME STEP NUMBER:           32
+           Current time step dt =  4.023E-03
+           Current time t       =  2.836E-01
+           NASTIN:
+           - Critical time step dtc:  4.023E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.248E+02
+           Elapsed CPU time:         8.638E+00
+           Residual of VELOCITY          :  1.487E-01
+           Residual of PRESSURE          :  1.805E-01
+
+        |- TIME STEP NUMBER:           33
+           Current time step dt =  1.657E-03
+           Current time t       =  2.853E-01
+           NASTIN:
+           - Critical time step dtc:  1.657E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.315E+02
+           Elapsed CPU time:         6.727E+00
+           Residual of VELOCITY          :  1.389E-01
+           Residual of PRESSURE          :  6.778E-04
+
+        |- TIME STEP NUMBER:           34
+           Current time step dt =  3.881E-03
+           Current time t       =  2.891E-01
+           NASTIN:
+           - Critical time step dtc:  3.881E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.379E+02
+           Elapsed CPU time:         6.350E+00
+           Residual of VELOCITY          :  2.665E-02
+           Residual of PRESSURE          :  4.770E-04
+
+        |- TIME STEP NUMBER:           35
+           Current time step dt =  2.683E-03
+           Current time t       =  2.918E-01
+           NASTIN:
+           - Critical time step dtc:  2.683E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.467E+02
+           Elapsed CPU time:         8.843E+00
+           Residual of VELOCITY          :  4.499E-02
+           Residual of PRESSURE          :  2.005E-02
+
+        |- TIME STEP NUMBER:           36
+           Current time step dt =  4.172E-03
+           Current time t       =  2.960E-01
+           NASTIN:
+           - Critical time step dtc:  4.172E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.533E+02
+           Elapsed CPU time:         6.555E+00
+           Residual of VELOCITY          :  4.183E-02
+           Residual of PRESSURE          :  1.497E-04
+
+        |- TIME STEP NUMBER:           37
+           Current time step dt =  4.127E-03
+           Current time t       =  3.001E-01
+           NASTIN:
+           - Critical time step dtc:  4.127E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.617E+02
+           Elapsed CPU time:         8.472E+00
+           Residual of VELOCITY          :  1.034E-02
+           Residual of PRESSURE          :  3.830E-04
+
+        |- TIME STEP NUMBER:           38
+           Current time step dt =  4.042E-03
+           Current time t       =  3.042E-01
+           NASTIN:
+           - Critical time step dtc:  4.042E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.703E+02
+           Elapsed CPU time:         8.529E+00
+           Residual of VELOCITY          :  1.951E-02
+           Residual of PRESSURE          :  2.320E-03
+
+        |- TIME STEP NUMBER:           39
+           Current time step dt =  3.842E-03
+           Current time t       =  3.080E-01
+           NASTIN:
+           - Critical time step dtc:  3.842E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.789E+02
+           Elapsed CPU time:         8.597E+00
+           Residual of VELOCITY          :  1.795E-02
+           Residual of PRESSURE          :  4.500E-04
+
+        |- TIME STEP NUMBER:           40
+           Current time step dt =  4.310E-03
+           Current time t       =  3.123E-01
+           NASTIN:
+           - Critical time step dtc:  4.310E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.879E+02
+           Elapsed CPU time:         8.981E+00
+           Residual of VELOCITY          :  2.322E-02
+           Residual of PRESSURE          :  3.612E-03
+
+        |- TIME STEP NUMBER:           41
+           Current time step dt =  4.244E-03
+           Current time t       =  3.166E-01
+           NASTIN:
+           - Critical time step dtc:  4.244E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         2.964E+02
+           Elapsed CPU time:         8.554E+00
+           Residual of VELOCITY          :  2.211E-02
+           Residual of PRESSURE          :  4.015E-04
+
+        |- TIME STEP NUMBER:           42
+           Current time step dt =  4.543E-03
+           Current time t       =  3.211E-01
+           NASTIN:
+           - Critical time step dtc:  4.543E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.049E+02
+           Elapsed CPU time:         8.479E+00
+           Residual of VELOCITY          :  1.589E-02
+           Residual of PRESSURE          :  6.351E-04
+
+        |- TIME STEP NUMBER:           43
+           Current time step dt =  4.285E-03
+           Current time t       =  3.254E-01
+           NASTIN:
+           - Critical time step dtc:  4.285E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.135E+02
+           Elapsed CPU time:         8.639E+00
+           Residual of VELOCITY          :  1.276E-02
+           Residual of PRESSURE          :  6.453E-04
+
+        |- TIME STEP NUMBER:           44
+           Current time step dt =  4.555E-03
+           Current time t       =  3.299E-01
+           NASTIN:
+           - Critical time step dtc:  4.555E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.219E+02
+           Elapsed CPU time:         8.366E+00
+           Residual of VELOCITY          :  1.576E-02
+           Residual of PRESSURE          :  1.768E-03
+
+        |- TIME STEP NUMBER:           45
+           Current time step dt =  4.419E-03
+           Current time t       =  3.344E-01
+           NASTIN:
+           - Critical time step dtc:  4.419E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.303E+02
+           Elapsed CPU time:         8.361E+00
+           Residual of VELOCITY          :  1.580E-02
+           Residual of PRESSURE          :  5.658E-04
+
+        |- TIME STEP NUMBER:           46
+           Current time step dt =  4.596E-03
+           Current time t       =  3.390E-01
+           NASTIN:
+           - Critical time step dtc:  4.596E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.385E+02
+           Elapsed CPU time:         8.260E+00
+           Residual of VELOCITY          :  1.715E-02
+           Residual of PRESSURE          :  2.005E-03
+
+        |- TIME STEP NUMBER:           47
+           Current time step dt =  4.383E-03
+           Current time t       =  3.433E-01
+           NASTIN:
+           - Critical time step dtc:  4.383E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.474E+02
+           Elapsed CPU time:         8.913E+00
+           Residual of VELOCITY          :  1.760E-02
+           Residual of PRESSURE          :  3.854E-04
+
+        |- TIME STEP NUMBER:           48
+           Current time step dt =  4.715E-03
+           Current time t       =  3.481E-01
+           NASTIN:
+           - Critical time step dtc:  4.715E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.561E+02
+           Elapsed CPU time:         8.694E+00
+           Residual of VELOCITY          :  2.003E-02
+           Residual of PRESSURE          :  2.250E-03
+
+        |- TIME STEP NUMBER:           49
+           Current time step dt =  4.625E-03
+           Current time t       =  3.527E-01
+           NASTIN:
+           - Critical time step dtc:  4.625E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.649E+02
+           Elapsed CPU time:         8.775E+00
+           Residual of VELOCITY          :  1.780E-02
+           Residual of PRESSURE          :  3.157E-04
+
+        |- TIME STEP NUMBER:           50
+           Current time step dt =  4.874E-03
+           Current time t       =  3.576E-01
+           NASTIN:
+           - Critical time step dtc:  4.874E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.734E+02
+           Elapsed CPU time:         8.507E+00
+           Residual of VELOCITY          :  2.019E-02
+           Residual of PRESSURE          :  1.593E-03
+
+        |- TIME STEP NUMBER:           51
+           Current time step dt =  4.848E-03
+           Current time t       =  3.624E-01
+           NASTIN:
+           - Critical time step dtc:  4.848E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.823E+02
+           Elapsed CPU time:         8.871E+00
+           Residual of VELOCITY          :  1.743E-02
+           Residual of PRESSURE          :  3.327E-04
+
+        |- TIME STEP NUMBER:           52
+           Current time step dt =  4.952E-03
+           Current time t       =  3.674E-01
+           NASTIN:
+           - Critical time step dtc:  4.952E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.909E+02
+           Elapsed CPU time:         8.630E+00
+           Residual of VELOCITY          :  2.568E-02
+           Residual of PRESSURE          :  3.443E-03
+
+        |- TIME STEP NUMBER:           53
+           Current time step dt =  4.670E-03
+           Current time t       =  3.720E-01
+           NASTIN:
+           - Critical time step dtc:  4.670E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         3.979E+02
+           Elapsed CPU time:         7.033E+00
+           Residual of VELOCITY          :  2.253E-02
+           Residual of PRESSURE          :  4.025E-05
+
+        |- TIME STEP NUMBER:           54
+           Current time step dt =  5.052E-03
+           Current time t       =  3.771E-01
+           NASTIN:
+           - Critical time step dtc:  5.052E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.064E+02
+           Elapsed CPU time:         8.490E+00
+           Residual of VELOCITY          :  1.527E-02
+           Residual of PRESSURE          :  1.223E-03
+
+        |- TIME STEP NUMBER:           55
+           Current time step dt =  5.180E-03
+           Current time t       =  3.823E-01
+           NASTIN:
+           - Critical time step dtc:  5.180E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.152E+02
+           Elapsed CPU time:         8.737E+00
+           Residual of VELOCITY          :  1.834E-02
+           Residual of PRESSURE          :  6.375E-04
+
+        |- TIME STEP NUMBER:           56
+           Current time step dt =  5.296E-03
+           Current time t       =  3.876E-01
+           NASTIN:
+           - Critical time step dtc:  5.296E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.236E+02
+           Elapsed CPU time:         8.396E+00
+           Residual of VELOCITY          :  1.396E-02
+           Residual of PRESSURE          :  1.059E-03
+
+        |- TIME STEP NUMBER:           57
+           Current time step dt =  5.316E-03
+           Current time t       =  3.929E-01
+           NASTIN:
+           - Critical time step dtc:  5.316E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.320E+02
+           Elapsed CPU time:         8.416E+00
+           Residual of VELOCITY          :  1.780E-02
+           Residual of PRESSURE          :  1.437E-03
+
+        |- TIME STEP NUMBER:           58
+           Current time step dt =  5.471E-03
+           Current time t       =  3.983E-01
+           NASTIN:
+           - Critical time step dtc:  5.471E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.407E+02
+           Elapsed CPU time:         8.760E+00
+           Residual of VELOCITY          :  1.724E-02
+           Residual of PRESSURE          :  4.997E-04
+
+        |- TIME STEP NUMBER:           59
+           Current time step dt =  5.314E-03
+           Current time t       =  4.037E-01
+           NASTIN:
+           - Critical time step dtc:  5.314E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.491E+02
+           Elapsed CPU time:         8.338E+00
+           Residual of VELOCITY          :  1.886E-02
+           Residual of PRESSURE          :  1.543E-03
+
+        |- TIME STEP NUMBER:           60
+           Current time step dt =  5.123E-03
+           Current time t       =  4.088E-01
+           NASTIN:
+           - Critical time step dtc:  5.123E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.574E+02
+           Elapsed CPU time:         8.375E+00
+           Residual of VELOCITY          :  1.646E-02
+           Residual of PRESSURE          :  4.180E-04
+
+        |- TIME STEP NUMBER:           61
+           Current time step dt =  5.363E-03
+           Current time t       =  4.141E-01
+           NASTIN:
+           - Critical time step dtc:  5.363E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.659E+02
+           Elapsed CPU time:         8.457E+00
+           Residual of VELOCITY          :  1.879E-02
+           Residual of PRESSURE          :  1.335E-03
+
+        |- TIME STEP NUMBER:           62
+           Current time step dt =  5.582E-03
+           Current time t       =  4.197E-01
+           NASTIN:
+           - Critical time step dtc:  5.582E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.742E+02
+           Elapsed CPU time:         8.330E+00
+           Residual of VELOCITY          :  1.804E-02
+           Residual of PRESSURE          :  7.280E-04
+
+        |- TIME STEP NUMBER:           63
+           Current time step dt =  5.864E-03
+           Current time t       =  4.256E-01
+           NASTIN:
+           - Critical time step dtc:  5.864E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.826E+02
+           Elapsed CPU time:         8.350E+00
+           Residual of VELOCITY          :  1.909E-02
+           Residual of PRESSURE          :  1.682E-03
+
+        |- TIME STEP NUMBER:           64
+           Current time step dt =  6.140E-03
+           Current time t       =  4.317E-01
+           NASTIN:
+           - Critical time step dtc:  6.140E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.910E+02
+           Elapsed CPU time:         8.365E+00
+           Residual of VELOCITY          :  1.693E-02
+           Residual of PRESSURE          :  2.505E-04
+
+        |- TIME STEP NUMBER:           65
+           Current time step dt =  6.078E-03
+           Current time t       =  4.378E-01
+           NASTIN:
+           - Critical time step dtc:  6.078E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         4.996E+02
+           Elapsed CPU time:         8.666E+00
+           Residual of VELOCITY          :  1.803E-02
+           Residual of PRESSURE          :  8.875E-04
+
+        |- TIME STEP NUMBER:           66
+           Current time step dt =  6.085E-03
+           Current time t       =  4.439E-01
+           NASTIN:
+           - Critical time step dtc:  6.085E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.090E+02
+           Elapsed CPU time:         9.417E+00
+           Residual of VELOCITY          :  1.448E-02
+           Residual of PRESSURE          :  2.746E-04
+
+        |- TIME STEP NUMBER:           67
+           Current time step dt =  6.141E-03
+           Current time t       =  4.500E-01
+           NASTIN:
+           - Critical time step dtc:  6.141E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.178E+02
+           Elapsed CPU time:         8.792E+00
+           Residual of VELOCITY          :  4.339E-02
+           Residual of PRESSURE          :  8.728E-03
+
+        |- TIME STEP NUMBER:           68
+           Current time step dt =  5.686E-03
+           Current time t       =  4.557E-01
+           NASTIN:
+           - Critical time step dtc:  5.686E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.241E+02
+           Elapsed CPU time:         6.304E+00
+           Residual of VELOCITY          :  3.981E-02
+           Residual of PRESSURE          :  4.764E-05
+
+        |- TIME STEP NUMBER:           69
+           Current time step dt =  6.448E-03
+           Current time t       =  4.622E-01
+           NASTIN:
+           - Critical time step dtc:  6.448E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.328E+02
+           Elapsed CPU time:         8.718E+00
+           Residual of VELOCITY          :  1.336E-02
+           Residual of PRESSURE          :  5.605E-04
+
+        |- TIME STEP NUMBER:           70
+           Current time step dt =  6.826E-03
+           Current time t       =  4.690E-01
+           NASTIN:
+           - Critical time step dtc:  6.826E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.413E+02
+           Elapsed CPU time:         8.441E+00
+           Residual of VELOCITY          :  1.780E-02
+           Residual of PRESSURE          :  6.414E-04
+
+        |- TIME STEP NUMBER:           71
+           Current time step dt =  6.809E-03
+           Current time t       =  4.758E-01
+           NASTIN:
+           - Critical time step dtc:  6.809E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.498E+02
+           Elapsed CPU time:         8.549E+00
+           Residual of VELOCITY          :  1.629E-02
+           Residual of PRESSURE          :  6.368E-04
+
+        |- TIME STEP NUMBER:           72
+           Current time step dt =  6.955E-03
+           Current time t       =  4.828E-01
+           NASTIN:
+           - Critical time step dtc:  6.955E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.586E+02
+           Elapsed CPU time:         8.713E+00
+           Residual of VELOCITY          :  1.427E-02
+           Residual of PRESSURE          :  6.063E-04
+
+        |- TIME STEP NUMBER:           73
+           Current time step dt =  7.149E-03
+           Current time t       =  4.899E-01
+           NASTIN:
+           - Critical time step dtc:  7.149E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.675E+02
+           Elapsed CPU time:         8.935E+00
+           Residual of VELOCITY          :  1.370E-02
+           Residual of PRESSURE          :  5.672E-04
+
+        |- TIME STEP NUMBER:           74
+           Current time step dt =  7.138E-03
+           Current time t       =  4.970E-01
+           NASTIN:
+           - Critical time step dtc:  7.138E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.764E+02
+           Elapsed CPU time:         8.926E+00
+           Residual of VELOCITY          :  3.194E-02
+           Residual of PRESSURE          :  3.701E-03
+
+        |- TIME STEP NUMBER:           75
+           Current time step dt =  7.718E-03
+           Current time t       =  5.048E-01
+           NASTIN:
+           - Critical time step dtc:  7.718E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.859E+02
+           Elapsed CPU time:         9.503E+00
+           Residual of VELOCITY          :  3.135E-02
+           Residual of PRESSURE          :  1.937E-04
+
+        |- TIME STEP NUMBER:           76
+           Current time step dt =  7.499E-03
+           Current time t       =  5.123E-01
+           NASTIN:
+           - Critical time step dtc:  7.499E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         5.946E+02
+           Elapsed CPU time:         8.671E+00
+           Residual of VELOCITY          :  2.037E-02
+           Residual of PRESSURE          :  1.165E-03
+
+        |- TIME STEP NUMBER:           77
+           Current time step dt =  7.702E-03
+           Current time t       =  5.200E-01
+           NASTIN:
+           - Critical time step dtc:  7.702E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.015E+02
+           Elapsed CPU time:         6.956E+00
+           Residual of VELOCITY          :  1.591E-02
+           Residual of PRESSURE          :  1.625E-05
+
+        |- TIME STEP NUMBER:           78
+           Current time step dt =  7.822E-03
+           Current time t       =  5.278E-01
+           NASTIN:
+           - Critical time step dtc:  7.822E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.101E+02
+           Elapsed CPU time:         8.581E+00
+           Residual of VELOCITY          :  2.465E-02
+           Residual of PRESSURE          :  2.097E-03
+
+        |- TIME STEP NUMBER:           79
+           Current time step dt =  8.471E-03
+           Current time t       =  5.363E-01
+           NASTIN:
+           - Critical time step dtc:  8.471E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.170E+02
+           Elapsed CPU time:         6.853E+00
+           Residual of VELOCITY          :  2.343E-02
+           Residual of PRESSURE          :  2.009E-05
+
+        |- TIME STEP NUMBER:           80
+           Current time step dt =  8.178E-03
+           Current time t       =  5.444E-01
+           NASTIN:
+           - Critical time step dtc:  8.178E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.254E+02
+           Elapsed CPU time:         8.408E+00
+           Residual of VELOCITY          :  1.577E-02
+           Residual of PRESSURE          :  8.819E-04
+
+        |- TIME STEP NUMBER:           81
+           Current time step dt =  8.351E-03
+           Current time t       =  5.528E-01
+           NASTIN:
+           - Critical time step dtc:  8.351E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.339E+02
+           Elapsed CPU time:         8.492E+00
+           Residual of VELOCITY          :  1.850E-02
+           Residual of PRESSURE          :  3.407E-04
+
+        |- TIME STEP NUMBER:           82
+           Current time step dt =  8.376E-03
+           Current time t       =  5.612E-01
+           NASTIN:
+           - Critical time step dtc:  8.376E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.423E+02
+           Elapsed CPU time:         8.380E+00
+           Residual of VELOCITY          :  1.934E-02
+           Residual of PRESSURE          :  1.052E-03
+
+        |- TIME STEP NUMBER:           83
+           Current time step dt =  9.175E-03
+           Current time t       =  5.703E-01
+           NASTIN:
+           - Critical time step dtc:  9.175E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.508E+02
+           Elapsed CPU time:         8.541E+00
+           Residual of VELOCITY          :  1.749E-02
+           Residual of PRESSURE          :  1.451E-04
+
+        |- TIME STEP NUMBER:           84
+           Current time step dt =  8.995E-03
+           Current time t       =  5.793E-01
+           NASTIN:
+           - Critical time step dtc:  8.995E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.594E+02
+           Elapsed CPU time:         8.627E+00
+           Residual of VELOCITY          :  2.280E-02
+           Residual of PRESSURE          :  1.291E-03
+
+        |- TIME STEP NUMBER:           85
+           Current time step dt =  9.208E-03
+           Current time t       =  5.885E-01
+           NASTIN:
+           - Critical time step dtc:  9.208E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.683E+02
+           Elapsed CPU time:         8.871E+00
+           Residual of VELOCITY          :  1.924E-02
+           Residual of PRESSURE          :  1.523E-04
+
+        |- TIME STEP NUMBER:           86
+           Current time step dt =  9.120E-03
+           Current time t       =  5.977E-01
+           NASTIN:
+           - Critical time step dtc:  9.120E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.768E+02
+           Elapsed CPU time:         8.467E+00
+           Residual of VELOCITY          :  1.738E-02
+           Residual of PRESSURE          :  5.048E-04
+
+        |- TIME STEP NUMBER:           87
+           Current time step dt =  9.763E-03
+           Current time t       =  6.074E-01
+           NASTIN:
+           - Critical time step dtc:  9.763E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.852E+02
+           Elapsed CPU time:         8.487E+00
+           Residual of VELOCITY          :  1.421E-02
+           Residual of PRESSURE          :  1.874E-04
+
+        |- TIME STEP NUMBER:           88
+           Current time step dt =  9.590E-03
+           Current time t       =  6.170E-01
+           NASTIN:
+           - Critical time step dtc:  9.590E-03
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         6.937E+02
+           Elapsed CPU time:         8.407E+00
+           Residual of VELOCITY          :  2.946E-02
+           Residual of PRESSURE          :  2.573E-03
+
+        |- TIME STEP NUMBER:           89
+           Current time step dt =  1.024E-02
+           Current time t       =  6.272E-01
+           NASTIN:
+           - Critical time step dtc:  1.024E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.004E+02
+           Elapsed CPU time:         6.718E+00
+           Residual of VELOCITY          :  2.832E-02
+           Residual of PRESSURE          :  2.554E-05
+
+        |- TIME STEP NUMBER:           90
+           Current time step dt =  1.026E-02
+           Current time t       =  6.375E-01
+           NASTIN:
+           - Critical time step dtc:  1.026E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.088E+02
+           Elapsed CPU time:         8.406E+00
+           Residual of VELOCITY          :  1.437E-02
+           Residual of PRESSURE          :  5.264E-04
+
+        |- TIME STEP NUMBER:           91
+           Current time step dt =  1.077E-02
+           Current time t       =  6.483E-01
+           NASTIN:
+           - Critical time step dtc:  1.077E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.175E+02
+           Elapsed CPU time:         8.692E+00
+           Residual of VELOCITY          :  1.706E-02
+           Residual of PRESSURE          :  2.748E-04
+
+        |- TIME STEP NUMBER:           92
+           Current time step dt =  1.070E-02
+           Current time t       =  6.590E-01
+           NASTIN:
+           - Critical time step dtc:  1.070E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.259E+02
+           Elapsed CPU time:         8.447E+00
+           Residual of VELOCITY          :  1.551E-02
+           Residual of PRESSURE          :  5.449E-04
+
+        |- TIME STEP NUMBER:           93
+           Current time step dt =  1.111E-02
+           Current time t       =  6.701E-01
+           NASTIN:
+           - Critical time step dtc:  1.111E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.344E+02
+           Elapsed CPU time:         8.460E+00
+           Residual of VELOCITY          :  1.495E-02
+           Residual of PRESSURE          :  2.008E-04
+
+        |- TIME STEP NUMBER:           94
+           Current time step dt =  1.119E-02
+           Current time t       =  6.813E-01
+           NASTIN:
+           - Critical time step dtc:  1.119E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.431E+02
+           Elapsed CPU time:         8.728E+00
+           Residual of VELOCITY          :  2.376E-02
+           Residual of PRESSURE          :  1.467E-03
+
+        |- TIME STEP NUMBER:           95
+           Current time step dt =  1.253E-02
+           Current time t       =  6.938E-01
+           NASTIN:
+           - Critical time step dtc:  1.253E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.515E+02
+           Elapsed CPU time:         8.417E+00
+           Residual of VELOCITY          :  2.338E-02
+           Residual of PRESSURE          :  9.473E-05
+
+        |- TIME STEP NUMBER:           96
+           Current time step dt =  1.205E-02
+           Current time t       =  7.059E-01
+           NASTIN:
+           - Critical time step dtc:  1.205E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.600E+02
+           Elapsed CPU time:         8.461E+00
+           Residual of VELOCITY          :  1.765E-02
+           Residual of PRESSURE          :  3.360E-04
+
+        |- TIME STEP NUMBER:           97
+           Current time step dt =  1.230E-02
+           Current time t       =  7.182E-01
+           NASTIN:
+           - Critical time step dtc:  1.230E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.686E+02
+           Elapsed CPU time:         8.606E+00
+           Residual of VELOCITY          :  1.417E-02
+           Residual of PRESSURE          :  1.985E-04
+
+        |- TIME STEP NUMBER:           98
+           Current time step dt =  1.247E-02
+           Current time t       =  7.306E-01
+           NASTIN:
+           - Critical time step dtc:  1.247E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.769E+02
+           Elapsed CPU time:         8.336E+00
+           Residual of VELOCITY          :  2.038E-02
+           Residual of PRESSURE          :  8.218E-04
+
+        |- TIME STEP NUMBER:           99
+           Current time step dt =  1.289E-02
+           Current time t       =  7.435E-01
+           NASTIN:
+           - Critical time step dtc:  1.289E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.854E+02
+           Elapsed CPU time:         8.482E+00
+           Residual of VELOCITY          :  1.944E-02
+           Residual of PRESSURE          :  1.151E-04
+
+        |- TIME STEP NUMBER:          100
+           Current time step dt =  1.321E-02
+           Current time t       =  7.567E-01
+           NASTIN:
+           - Critical time step dtc:  1.321E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         7.940E+02
+           Elapsed CPU time:         8.572E+00
+           Residual of VELOCITY          :  3.630E-02
+           Residual of PRESSURE          :  3.109E-03
+
+        |- TIME STEP NUMBER:          101
+           Current time step dt =  1.499E-02
+           Current time t       =  7.717E-01
+           NASTIN:
+           - Critical time step dtc:  1.499E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.007E+02
+           Elapsed CPU time:         6.762E+00
+           Residual of VELOCITY          :  3.489E-02
+           Residual of PRESSURE          :  2.384E-05
+
+        |- TIME STEP NUMBER:          102
+           Current time step dt =  1.363E-02
+           Current time t       =  7.853E-01
+           NASTIN:
+           - Critical time step dtc:  1.363E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.089E+02
+           Elapsed CPU time:         8.199E+00
+           Residual of VELOCITY          :  1.365E-02
+           Residual of PRESSURE          :  2.382E-04
+
+        |- TIME STEP NUMBER:          103
+           Current time step dt =  1.395E-02
+           Current time t       =  7.993E-01
+           NASTIN:
+           - Critical time step dtc:  1.395E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.180E+02
+           Elapsed CPU time:         9.102E+00
+           Residual of VELOCITY          :  1.607E-02
+           Residual of PRESSURE          :  2.694E-04
+
+        |- TIME STEP NUMBER:          104
+           Current time step dt =  1.385E-02
+           Current time t       =  8.131E-01
+           NASTIN:
+           - Critical time step dtc:  1.385E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.268E+02
+           Elapsed CPU time:         8.734E+00
+           Residual of VELOCITY          :  1.288E-02
+           Residual of PRESSURE          :  2.407E-04
+
+        |- TIME STEP NUMBER:          105
+           Current time step dt =  1.362E-02
+           Current time t       =  8.268E-01
+           NASTIN:
+           - Critical time step dtc:  1.362E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.351E+02
+           Elapsed CPU time:         8.358E+00
+           Residual of VELOCITY          :  1.344E-02
+           Residual of PRESSURE          :  3.901E-04
+
+        |- TIME STEP NUMBER:          106
+           Current time step dt =  1.367E-02
+           Current time t       =  8.404E-01
+           NASTIN:
+           - Critical time step dtc:  1.367E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.435E+02
+           Elapsed CPU time:         8.380E+00
+           Residual of VELOCITY          :  1.874E-02
+           Residual of PRESSURE          :  5.181E-04
+
+        |- TIME STEP NUMBER:          107
+           Current time step dt =  1.435E-02
+           Current time t       =  8.548E-01
+           NASTIN:
+           - Critical time step dtc:  1.435E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.521E+02
+           Elapsed CPU time:         8.572E+00
+           Residual of VELOCITY          :  2.059E-02
+           Residual of PRESSURE          :  4.099E-04
+
+        |- TIME STEP NUMBER:          108
+           Current time step dt =  1.422E-02
+           Current time t       =  8.690E-01
+           NASTIN:
+           - Critical time step dtc:  1.422E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.607E+02
+           Elapsed CPU time:         8.571E+00
+           Residual of VELOCITY          :  1.776E-02
+           Residual of PRESSURE          :  3.271E-04
+
+        |- TIME STEP NUMBER:          109
+           Current time step dt =  1.448E-02
+           Current time t       =  8.835E-01
+           NASTIN:
+           - Critical time step dtc:  1.448E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.694E+02
+           Elapsed CPU time:         8.758E+00
+           Residual of VELOCITY          :  1.884E-02
+           Residual of PRESSURE          :  4.734E-04
+
+        |- TIME STEP NUMBER:          110
+           Current time step dt =  1.529E-02
+           Current time t       =  8.988E-01
+           NASTIN:
+           - Critical time step dtc:  1.529E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.779E+02
+           Elapsed CPU time:         8.527E+00
+           Residual of VELOCITY          :  1.856E-02
+           Residual of PRESSURE          :  4.227E-04
+
+        |- TIME STEP NUMBER:          111
+           Current time step dt =  1.577E-02
+           Current time t       =  9.145E-01
+           NASTIN:
+           - Critical time step dtc:  1.577E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.863E+02
+           Elapsed CPU time:         8.398E+00
+           Residual of VELOCITY          :  1.912E-02
+           Residual of PRESSURE          :  2.788E-04
+
+        |- TIME STEP NUMBER:          112
+           Current time step dt =  1.561E-02
+           Current time t       =  9.302E-01
+           NASTIN:
+           - Critical time step dtc:  1.561E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         8.947E+02
+           Elapsed CPU time:         8.351E+00
+           Residual of VELOCITY          :  2.393E-02
+           Residual of PRESSURE          :  5.796E-04
+
+        |- TIME STEP NUMBER:          113
+           Current time step dt =  1.507E-02
+           Current time t       =  9.452E-01
+           NASTIN:
+           - Critical time step dtc:  1.507E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         9.034E+02
+           Elapsed CPU time:         8.714E+00
+           Residual of VELOCITY          :  2.233E-02
+           Residual of PRESSURE          :  4.273E-04
+
+        |- TIME STEP NUMBER:          114
+           Current time step dt =  1.581E-02
+           Current time t       =  9.610E-01
+           NASTIN:
+           - Critical time step dtc:  1.581E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         9.123E+02
+           Elapsed CPU time:         8.866E+00
+           Residual of VELOCITY          :  1.911E-02
+           Residual of PRESSURE          :  1.071E-04
+
+        |- TIME STEP NUMBER:          115
+           Current time step dt =  1.632E-02
+           Current time t       =  9.774E-01
+           NASTIN:
+           - Critical time step dtc:  1.632E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         9.207E+02
+           Elapsed CPU time:         8.437E+00
+           Residual of VELOCITY          :  1.910E-02
+           Residual of PRESSURE          :  4.594E-04
+
+        |- TIME STEP NUMBER:          116
+           Current time step dt =  1.646E-02
+           Current time t       =  9.938E-01
+           NASTIN:
+           - Critical time step dtc:  1.646E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         9.292E+02
+           Elapsed CPU time:         8.494E+00
+           Residual of VELOCITY          :  1.768E-02
+           Residual of PRESSURE          :  8.566E-05
+
+        |- TIME STEP NUMBER:          117
+           Current time step dt =  1.767E-02
+           Current time t       =  1.011E+00
+           NASTIN:
+           - Critical time step dtc:  1.767E-02
+           - Ratio dt/dtc:            1.000E+00
+
+           Global iteration number:     1, block number:  1
+           Current CPU time:         9.377E+02
+           Elapsed CPU time:         8.547E+00
+           Residual of VELOCITY          :  2.610E-02
+           Residual of PRESSURE          :  7.591E-04
+
+
+        --------------------------
+*    |- SUMMARY OF COMPUTING TIMES
+        --------------------------
+
+
+        TOTAL CPU TIME:                  937.77
+        STARTING OPERATIONS:               3.59 (  0.38 % )
+          Geometry reading:                0.07 (  0.01 % )
+          Set Reading:                     0.00 (  0.00 % )
+          Boundary cond. reading:          0.00 (  0.00 % )
+          Fields reading:                  0.01 (  0.00 % )
+          Mesh partitioning:               0.80 (  0.08 % )
+          Mesh multiplication:             0.00 (  0.00 % )
+          Domain construction:             2.30 (  0.25 % )
+            Groups:                        0.58 ( 25.36 % )
+            Halos:                         0.03 (  1.40 % )
+            Element search:                0.00 (  0.00 % )
+            Coupling:                      0.00 (  0.00 % )
+            Output mesh:                   0.06 (  2.47 % )
+          Additional arrays:               0.42 (  0.04 % )
+        PROPERTIES UPDATE:                 0.00 (  0.00 % )
+
+        NASTIN MODULE:                   934.31 ( 99.63 % )
+          Begin run:                       0.66 (  0.07 % )
+          Read restart:                    0.00 (  0.00 % )
+          Initial solution:                0.09 (  0.01 % )
+          Begin time step:                 7.66 (  0.82 % )
+          Begin iteration:                 0.31 (  0.03 % )
+          Do iteration:                  924.97 ( 99.00 % )
+          End iteration:                   0.21 (  0.02 % )
+          End time step:                   0.22 (  0.02 % )
+          Output:                          0.70 (  0.07 % )
+          Write restart:                   0.02 (  0.00 % )
+
+          Details of Doiter:
+
+          Matrix element assembly
+            Average:                     378.66 ( 40.53 % )
+            Maximum:                     389.83 ( 41.72 % )
+            Average load balance:          0.97
+            Average element cost:         12.19 us
+            ---                      
+            Theoretical average:         360.13
+            Theoretical maximum:         363.32
+            Theoretical load bal:          0.99
+            Maximum variability:          60.06 % 
+          Matrix boundary assembly
+            Average:                       0.27 (  0.03 % )
+            Maximum:                       0.33 (  0.04 % )
+            Load balance:                  0.82
+            Average entity cost:         839.09 ns
+          Solver:                        458.16 ( 49.04 % )
+
+
+        --------------------------
+*    |- SUMMARY OF REQUIRED MEMORY
+        --------------------------
+
+
+        |- MASTER COUNT:
+
+           Total memory:                  64.98 Mbytes
+           Construction of the domain:    64.95 Mbytes
+           Element search strategy:        0.00 Mbytes
+           NASTIN module:                  0.03 Mbytes
+           KERMOD module:                  0.00 Mbytes
+           Solvers:                        0.00 Mbytes
+
+        |- SLAVE MAX COUNT:
+
+           Total memory:                   1.00 Gbytes
+           Construction of the domain:     0.22 Gbytes
+           Element search strategy:        0.02 Gbytes
+           NASTIN module:                  0.08 Gbytes
+           KERMOD module:                  0.00 Gbytes
+           Solvers:                        0.68 Gbytes
+
+
+        --------------------------
+*    |- SUMMARY OF COMPUTING TIMES
+        --------------------------
+
+
+        TOTAL CPU TIME:                  937.77
+        STARTING OPERATIONS:               3.59 (  0.38 % )
+          Geometry reading:                0.07 (  0.01 % )
+          Set Reading:                     0.00 (  0.00 % )
+          Boundary cond. reading:          0.00 (  0.00 % )
+          Fields reading:                  0.01 (  0.00 % )
+          Mesh partitioning:               0.80 (  0.08 % )
+          Mesh multiplication:             0.00 (  0.00 % )
+          Domain construction:             2.30 (  0.25 % )
+            Groups:                        0.58 ( 25.36 % )
+            Halos:                         0.03 (  1.40 % )
+            Element search:                0.00 (  0.00 % )
+            Coupling:                      0.00 (  0.00 % )
+            Output mesh:                   0.06 (  2.47 % )
+          Additional arrays:               0.42 (  0.04 % )
+        PROPERTIES UPDATE:                 0.00 (  0.00 % )
+
+        NASTIN MODULE:                   934.31 ( 99.63 % )
+          Begin run:                       0.66 (  0.07 % )
+          Read restart:                    0.00 (  0.00 % )
+          Initial solution:                0.09 (  0.01 % )
+          Begin time step:                 7.66 (  0.82 % )
+          Begin iteration:                 0.31 (  0.03 % )
+          Do iteration:                  924.97 ( 99.00 % )
+          End iteration:                   0.21 (  0.02 % )
+          End time step:                   0.22 (  0.02 % )
+          Output:                          0.70 (  0.07 % )
+          Write restart:                   0.02 (  0.00 % )
+
+          Details of Doiter:
+
+          Matrix element assembly
+            Average:                     378.66 ( 40.53 % )
+            Maximum:                     389.83 ( 41.72 % )
+            Average load balance:          0.97
+            Average element cost:         12.19 us
+            ---                      
+            Theoretical average:         360.13
+            Theoretical maximum:         363.32
+            Theoretical load bal:          0.99
+            Maximum variability:          60.06 % 
+          Matrix boundary assembly
+            Average:                       0.27 (  0.03 % )
+            Maximum:                       0.33 (  0.04 % )
+            Load balance:                  0.82
+            Average entity cost:         839.09 ns
+          Solver:                        458.16 ( 49.04 % )
+
+
+     |- END OF ANALYSIS
+
