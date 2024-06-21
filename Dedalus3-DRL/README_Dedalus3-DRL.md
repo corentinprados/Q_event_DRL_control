@@ -4,9 +4,7 @@ This project demonstrates the use of Reinforcement Learning (RL) to control flow
 
 ## Project Structure
 
-Thera two folder names: 
-- `my_project_without_wandb`: my_project only on local.
-- `my_project_with_wandb`: my_project using wandb, a service to stock online machine learning informatioins
+
 There are two main versions of the project:
 - `my_project_without_wandb`: This version of the project runs entirely on the local machine without using any external services.
 - `my_project_with_wandb`: This version of the project integrates with Weights & Biases (wandb), a service for tracking and managing machine learning experiments online.
