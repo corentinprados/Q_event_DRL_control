@@ -1,16 +1,18 @@
-# ALYA Repository Overview
+# ALYA
 
-This document provides an overview of the contents within the ALYA repository, which includes all necessary files and folders for conducting ALYA simulations.
+## Description
+This folder contains all files related to ALYA simulations for the project "Q_event_DRL_control". The ALYA simulations are crucial for understanding and controlling Q events in fluid dynamics using Deep Reinforcement Learning.
 
 ## Folder Structure
-
-Below is a description of the main folders within the repository:
+The repository is organized into the following main folders:
 
 | Folder Name                         | Description |
 |-------------------------------------|-------------|
 | `re180_min_channel_initial_code`    | Contains the initial setup for running simulations at a Reynolds number of 180. Everything is pre-configured for immediate simulation. |
 | `re180_min_channel_1`               | This folder holds the output from a simulation run with a simulation time of 1. See the table below for details on key files and their configurations. |
 | `longer_run_vtk`                    | Contains VTK files converted from specific ALYA output files (`mpio.run`) using the command: `mpirun -np 6 /scratch/polsm/alya_exe/mpio2vtk channel`. |
+| `Plot_for_report`                   | This folder contains the images and related files that were used in the report. |
+| `Gmsh`                   | This folder contains the Gmsh files for the meshing of the simulations. |
 
 ### Detailed Configuration of `re180_min_channel_1`
 
@@ -22,33 +24,26 @@ Below is a description of the main folders within the repository:
 
 ## Key Files
 
-| File Name                  | Description |
-|----------------------------|-------------|
-| `Re180.std`                | Data from Jimenez's paper used for comparison and validation of our simulations. |
-| `ALYA_post_processing.ipynb` | Jupyter Notebook for analyzing ALYA simulation data. |
+| File Name          | Description |
+|--------------------|-------------|
+| `Re180.prof.txt`   | Data from Jiménez's paper used for comparison and validation of our simulations. |
+| `requirements.txt` | Contains all the necessary packages required to run the programs in this project. |
+| `ALYA_full_load_post_processing.ipynb` | This notebook allows loading the simulation at all times, enabling a study for each timestep. It is resource-intensive as it requires loading all timesteps into RAM. |
+| `ALYA_small_load_post_processing.ipynb` | A lighter version of the previous notebook that only studies average statistics and compares them to Jiménez's results. |
+| `ALYA_Q_event_Detection.ipynb` | This notebook focuses solely on the study and visualization of Q-events. |
 
 ## Jupyter Notebook Details
 
-The Jupyter Notebook included in this repository (`ALYA_post_processing.ipynb`) is structured as follows:
+### ALYA_full_load_post_processing.ipynb
+- **Purpose**: Load and analyze simulation data for each timestep.
+- **Usage**: Suitable for detailed timestep-by-timestep analysis.
 
-### 0. Introduction
-- **Libraries**: Importation of libraries necessary for processing the data.
+### ALYA_small_load_post_processing.ipynb
+- **Purpose**: Study average statistics and compare with Jiménez's results.
+- **Usage**: Efficient for statistical analysis without high memory usage.
 
-### 1. Data Preparation
-- **Loading Data**: Ingest the data required for analysis.
-- **Normalization**: Standardize the data to a common scale.
-- **Velocity Fields Definitions**: Define the various velocity fields used in simulations.
-
-### 2. Validation of the Simulation
-- **Data Loading**: Load simulation outputs.
-- **Rewriting of ALYA Data**: Transform data into a format suitable for analysis.
-- **Mean Streamwise Velocity Field**: Analyze the mean velocity field in the streamwise direction.
-- **Root-Mean-Square Velocity Fluctuations**: Evaluate the fluctuations in velocity.
-- **Reynolds Shear Stress**: Examine the shear stress due to Reynolds number.
-- **Conclusion**: Summarize the findings from the validation.
-
-### 3. Q-Events Detection
-- **Explanation**: Describe the theory and rationale behind Q-events detection.
-- **In Practice**: Steps for detecting, counting, and analyzing Q-events using percolation diagrams.
+### ALYA_Q_event_Detection.ipynb
+- **Purpose**: Study and visualize Q-events in the simulation data.
+- **Usage**: Focused on detecting, counting, and analyzing Q-events using percolation diagrams.
 
 This README aims to clarify the structure and content of the ALYA repository for users, ensuring effective navigation and utilization of the provided simulation tools and data.

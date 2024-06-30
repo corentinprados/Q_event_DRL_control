@@ -65,3 +65,9 @@ This directory contains scripts for post-training analysis.
 - `plot_training_rewards.py`: Plots the rewards obtained during training for visualization purposes.
 - `plot_episode_rewards.py`: Plots the rewards obtained per episode for further analysis.
 - `checkpoints_initial_conditions/`: Contains initial condition checkpoint files used during the simulation.
+
+## Additional Information
+
+- **requirements.txt**: Contains all the necessary packages required to run the programs in this project.
+- **Plot_for_report**: This folder contains the images and related files that were used in the report.
+
